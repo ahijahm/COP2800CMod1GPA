@@ -28,11 +28,21 @@ public class PalmerPenguinsM2 {
             System.out.println("\t" + SP_ADELIE + "!");
             System.out.print("There are a total of " + TOTAL_SPECIES);
             System.out.println(" penguin species in this dataset.");
+            System.out.print("There are a total of " + totalPenguins);
+            System.out.println(" penguins in this dataset.");
             
             //Enhance Output with Percentages
-            System.out.printf("%s: %d(%.2f%%)\n",SP_CHINSTRAP,
+            System.out.printf("%s: %d (%.2f%%)\n",SP_CHINSTRAP,
                                                  NUM_CHINSTRAP,
                                                  ((double)NUM_CHINSTRAP
+                                                 /totalPenguins * 100));
+            System.out.printf("%s: %d (%.2f%%)\n",SP_GENTOO,
+                                                 NUM_GENTOO,
+                                                 ((double)NUM_GENTOO
+                                                 /totalPenguins * 100));
+            System.out.printf("%s: %d (%.2f%%)\n",SP_ADELIE,
+                                                 NUM_ADELIE,
+                                                 ((double)NUM_ADELIE
                                                  /totalPenguins * 100));
     }
 }
